@@ -291,3 +291,18 @@ footer {
 .nav-links a {
     margin: 10px;
 }
+.testimonial {
+    background: #111;
+    border-left: 3px solid gold;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.call-btn {
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
