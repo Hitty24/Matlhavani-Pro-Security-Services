@@ -272,6 +272,17 @@ footer {
     align-items: center;
     padding: 15px;
 }
+/* GOOGLE MAP */
+.map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+#location p {
+    color: #ccc;
+}
 
 .nav-logo img {
     width: 50px;
