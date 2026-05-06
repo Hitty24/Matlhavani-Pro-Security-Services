@@ -291,3 +291,30 @@ footer {
 .nav-links a {
     margin: 10px;
 }
+.testimonial {
+    background: #111;
+    border-left: 3px solid gold;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.call-btn {
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1000;
+}
