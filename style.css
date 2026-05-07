@@ -3,8 +3,16 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #0b0b0b;
     color: #e5e5e5;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+        url("background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* HEADER */
