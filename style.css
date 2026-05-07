@@ -1,223 +1,70 @@
-/* DARK LUXURY THEME */
+/* =========================
+   MATLHAVANI PRO SECURITY
+   DARK LUXURY THEME
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     color: #e5e5e5;
 
     background:
-        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+        linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)),
         url("background.png");
 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    line-height: 1.6;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #000, #1a1a1a);
-    color: gold;
-    padding: 25px;
-    text-align: center;
-    border-bottom: 2px solid gold;
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
 }
 
-/* NAV */
-nav {
-    background: #111;
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #222;
-}
+/* =========================
+   HERO SECTION
+========================= */
 
-nav a {
-    color: #ddd;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: gold;
-}
-
-/* SECTIONS */
-section {
-    background: #111;
-    margin: 20px auto;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 900px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
-}
-
-/* HEADINGS */
-h2 {
-    color: gold;
-    border-left: 4px solid gold;
-    padding-left: 10px;
-}
-
-/* FORM */
-.pro-form {
-    background: #0f0f0f;
-    padding: 25px;
-    border-radius: 10px;
-}
-
-label {
-    color: #bbb;
-}
-
-input, select, textarea {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    color: white;
-}
-
-/* FOCUS */
-input:focus, select:focus, textarea:focus {
-    border-color: gold;
-    box-shadow: 0 0 8px rgba(255,215,0,0.4);
-}
-
-/* BUTTON */
-.submit-btn {
-    background: gold;
-    color: black;
-    font-weight: bold;
-}
-
-.submit-btn:hover {
-    background: #e6c200;
-}
-
-/* WHATSAPP BUTTON */
-.whatsapp-btn {
-    background: #25D366;
-}
-
-/* FOOTER */
-footer {
-    background: rgb(55, 53, 53);
-    color: black;
-    text-align: center;
-    padding: 15px;
-    border-top: 1px solid #222;
-}
-/* SUCCESS OVERLAY */
-.success-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.4s;
-    z-index: 999;
-}
-
-.success-overlay.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* BOX */
-.success-box {
-    background: #111;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid gold;
-    box-shadow: 0 0 20px rgba(255,215,0,0.3);
-    animation: scaleUp 0.4s ease;
-}
-
-/* CHECKMARK */
-.checkmark {
-    font-size: 50px;
-    color: gold;
-    margin-bottom: 10px;
-    animation: pop 0.4s ease;
-}
-
-/* ANIMATIONS */
-@keyframes scaleUp {
-    from { transform: scale(0.7); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes pop {
-    0% { transform: scale(0); }
-    100% { transform: scale(1); }
-}
-/* HERO SECTION */
-/* HERO SECTION */
 .hero {
     position: relative;
     height: 100vh;
 
-    background: url("background.png") center center/cover no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
-    overflow: hidden;
+    padding: 20px;
 }
 
-/* BLUR EFFECT */
-.hero::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    background: inherit;
-
-    filter: blur(5px);
-
-    transform: scale(1.05);
-
-    z-index: 1;
-}
-
-/* DARK OVERLAY */
-.hero-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0,0,0,0.7);
-
+.hero-content {
     z-index: 2;
 }
 
-/* CONTENT */
-.hero-content {
-    position: relative;
-    z-index: 3;
-
-    text-align: center;
-    color: white;
-}
 /* LOGO */
-.logo {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 1px;
+.hero-logo {
+    width: 170px;
+    max-width: 100%;
+
+    margin-bottom: 20px;
+
+    filter: drop-shadow(0 0 20px rgba(255,215,0,0.5));
+}
+
+/* LOGO TEXT */
+.logo-text {
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
 .gold {
@@ -226,131 +73,473 @@ footer {
 
 /* TAGLINE */
 .tagline {
-    margin: 15px 0;
     font-size: 18px;
     color: #ccc;
+
+    margin-bottom: 25px;
 }
 
-/* BUTTONS */
+/* HERO BUTTONS */
 .hero-buttons {
     margin-top: 20px;
 }
 
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+
+    padding: 14px 24px;
+    margin: 8px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
 .btn-primary {
     background: gold;
     color: black;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.btn-secondary {
-    background: transparent;
-    border: 1px solid gold;
-    color: gold;
-    padding: 12px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .btn-primary:hover {
     background: #e6c200;
+    transform: translateY(-2px);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    border: 1px solid gold;
+    color: gold;
 }
 
 .btn-secondary:hover {
     background: gold;
     color: black;
 }
-@media (max-width: 768px) {
 
-    .logo {
-        font-size: 26px;
-    }
+/* =========================
+   NAVBAR
+========================= */
 
-    .tagline {
-        font-size: 14px;
-    }
-
-    .hero {
-        height: 70vh;
-        padding: 10px;
-    }
-}
-/* HERO LOGO */
-.hero-logo {
-    width: 140px;
-    max-width: 100%;
-    margin-bottom: 15px;
-    filter: drop-shadow(0 0 10px rgba(255,215,0,0.5));
-}
-
-/* TEXT UNDER LOGO */
-.logo-text {
-    font-size: 28px;
-    margin: 10px 0;
-}
-@media (max-width: 768px) {
-
-    .hero-logo {
-        width: 100px;
-    }
-
-    .logo-text {
-        font-size: 20px;
-    }
-}
 .navbar {
+    position: sticky;
+    top: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-}
-/* GOOGLE MAP */
-.map-container {
-    margin-top: 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #333;
-}
 
-#location p {
-    color: #ccc;
+    padding: 15px 30px;
+
+    background: rgba(0,0,0,0.9);
+
+    backdrop-filter: blur(6px);
+
+    z-index: 999;
 }
 
 .nav-logo img {
-    width: 50px;
+    width: 55px;
 }
 
+/* NAV LINKS */
 .nav-links a {
-    margin: 10px;
+    color: #ddd;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
 }
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 40px 25px;
+
+    background: rgba(17,17,17,0.78);
+
+    backdrop-filter: blur(5px);
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+}
+
+/* HEADINGS */
+h2 {
+    color: gold;
+
+    margin-bottom: 20px;
+
+    border-left: 4px solid gold;
+
+    padding-left: 12px;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+/* SERVICE CARD */
+.service-box {
+    background: rgba(0,0,0,0.55);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(255,215,0,0.2);
+
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+
+    border-color: gold;
+}
+
+.service-box h3 {
+    color: gold;
+
+    margin-bottom: 10px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
 .testimonial {
-    background: #111;
+    background: rgba(0,0,0,0.45);
+
     border-left: 3px solid gold;
-    padding: 15px;
-    margin: 10px 0;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
     border-radius: 8px;
 }
-.call-btn {
-    display: inline-block;
-    background: gold;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+.testimonial h4 {
+    color: gold;
+
     margin-top: 10px;
 }
+
+/* =========================
+   FORM
+========================= */
+
+.pro-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 6px;
+
+    border: 1px solid #333;
+
+    background: #1a1a1a;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: gold;
+
+    box-shadow: 0 0 10px rgba(255,215,0,0.3);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    background: gold;
+
+    color: black;
+
+    border: none;
+
+    padding: 15px;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e6c200;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    margin-top: 15px;
+
+    background: #25D366;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+
+    margin-right: 10px;
+
+    padding: 10px 18px;
+
+    border: 1px solid gold;
+
+    color: gold;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: gold;
+    color: black;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.map-container {
+    margin-top: 20px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #333;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: rgba(0,0,0,0.95);
+
+    margin-top: 40px;
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+
 .whatsapp-float {
     position: fixed;
+
     bottom: 20px;
     right: 20px;
+
     background: #25D366;
+
     color: white;
-    font-size: 24px;
-    padding: 15px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 50%;
+
     text-decoration: none;
-    z-index: 1000;
+
+    font-size: 28px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+    z-index: 999;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+
+.success-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.4s;
+
+    z-index: 9999;
+}
+
+.success-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* SUCCESS BOX */
+.success-box {
+    background: #111;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    border: 1px solid gold;
+
+    text-align: center;
+
+    box-shadow: 0 0 20px rgba(255,215,0,0.3);
+}
+
+/* CHECKMARK */
+.checkmark {
+    font-size: 50px;
+
+    color: gold;
+
+    margin-bottom: 10px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 15px;
+    }
+
+    .hero-logo {
+        width: 120px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 25px 18px;
+    }
 }
