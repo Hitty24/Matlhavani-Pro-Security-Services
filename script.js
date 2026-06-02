@@ -9,7 +9,7 @@ function handleSubmit(event) {
     let message = form.message.value;
 
     let whatsappText = `New Inquiry:%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${message}`;
-    let whatsappNumber = "27797462759";
+    let whatsappNumber = "27717746217";
 
     fetch(form.action, {
         method: "POST",
