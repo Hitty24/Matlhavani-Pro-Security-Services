@@ -10,20 +10,19 @@
 }
 
 /* BODY */
-body {
-    font-family: Arial, sans-serif;
-    color: #e5e5e5;
+body{
+
+font-family:'Poppins',sans-serif;
+ color:#222;
 
     background:
-        linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)),
+        linear-gradient(rgba(255,255,255,.88),
+        rgba(245,245,245,.90)),
         url("background.png");
 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    line-height: 1.6;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 /* SMOOTH SCROLL */
@@ -99,12 +98,14 @@ html {
 
 /* PRIMARY BUTTON */
 .btn-primary {
-    background: gold;
-    color: black;
+background:#d4af37;
+
+color:white;
+
 }
 
 .btn-primary:hover {
-    background: #e6c200;
+    background:#b89017;
     transform: translateY(-2px);
 }
 
@@ -133,7 +134,9 @@ html {
 
     padding: 15px 30px;
 
-    background: rgba(0,0,0,0.9);
+   background:white;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 
     backdrop-filter: blur(6px);
 
@@ -146,7 +149,7 @@ html {
 
 /* NAV LINKS */
 .nav-links a {
-    color: #ddd;
+    color:#222;
 
     text-decoration: none;
 
@@ -158,7 +161,7 @@ html {
 }
 
 .nav-links a:hover {
-    color: gold;
+    color:#c59b08;
 }
 
 /* =========================
@@ -170,15 +173,21 @@ section {
 
     margin: 30px auto;
 
-    padding: 40px 25px;
+    padding: 60px 40px;
 
-    background: rgba(17,17,17,0.78);
+    background:rgba(255,255,255,.92);
+
+    border-radius:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
 
     backdrop-filter: blur(5px);
 
-    border-radius: 14px;
+   
 
-    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+   
 }
 
 /* HEADINGS */
@@ -206,21 +215,26 @@ h2 {
 
 /* SERVICE CARD */
 .service-box {
-    background: rgba(0,0,0,0.55);
+   background:white;
 
     padding: 20px;
 
     border-radius: 10px;
 
-    border: 1px solid rgba(255,215,0,0.2);
+  border:1px solid #ececec;
+   box-shadow:0 10px 30px rgba(0,0,0,.08);
 
     transition: 0.3s;
 }
 
-.service-box:hover {
-    transform: translateY(-5px);
+.service-box:hover{
 
-    border-color: gold;
+transform:translateY(-8px);
+
+border-color:gold;
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
 }
 
 .service-box h3 {
@@ -295,12 +309,11 @@ textarea {
     padding: 14px;
 
     border-radius: 6px;
+background:white;
 
-    border: 1px solid #333;
+color:#222;
 
-    background: #1a1a1a;
-
-    color: white;
+border:1px solid #ddd;
 
     font-size: 15px;
 }
@@ -411,7 +424,11 @@ footer {
 
     padding: 20px;
 
-    background: rgba(0,0,0,0.95);
+   
+background:#111;
+
+color:white;
+  
 
     margin-top: 40px;
 }
